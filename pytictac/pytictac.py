@@ -1,5 +1,3 @@
-#from __future__ import print_function
-
 import game
 
 if __name__ == "__main__":

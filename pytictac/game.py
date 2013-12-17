@@ -1,5 +1,3 @@
-#from __future__ import print_function
-
 import random
 import time
 
@@ -29,6 +27,4 @@ class Board:
                 self.location[i][j] = self.location_values[random.randint(0, 2)]
 
     def rotate(self):
-        #tmp = copy.deepcopy(self.location)
-
-        self.location = zip(*self.location[::-1])
+        self.location = list(zip(*reversed(self.location)))
